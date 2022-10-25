@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  
+    background-color: #000;
+    font-family: "manrope", sans-serif;
+}
+
+
+
+body {
+    padding-top: 3rem;
+    background-image: url(./img/rocket-coffee.png), url(./img/blur-1.png), url(./img/blur-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, right;
+    height: 100vh;
+    background-size: 50% , 60%, 60%;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.coffee {
+    cursor: pointer;
+    width: 172px;
+    height: 37px;
+    border: 1px solid #8257E5;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: transparent;
+
+}
+
+.coffee:hover{
+    background-color: #8257E5;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Manrope;
+
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+
+}
+
+.text{
+    display: none;
+}
+
+.lista li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+}
+
+.mobile{
+    display: none;
+}
+
+
+
+
+button .coffee {
+    cursor: pointer;
+    border-color:  #29292E;;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: transparent;
+    font-size: 10px;
+    font-family: "manrope", sans-serif;
+}
+
+
+
+.abrir {
+    display: none;
+    cursor: pointer;
+}
+
+.great {
+    display: flex;
+    color: #fff;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    
+}
+
+.code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+
+.coffeetwo {
+    display: none;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+        background: url(./img/rocket-coffee.png), url(./img/blur-mobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100%, 100vw 60%;
+        background-attachment: fixed;
+    }
+
+    button  {
+        display: none;
+    }
+    .lista{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .lista li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .abrir {
+        display: block;
+    }
+
+    .lista.active {
+        transform: translateX(0);
+    }
+
+    .cafe {
+        height: 30vh;
+    }
+    .mobile{
+        display: flex;
+    }
+    .text{
+        display: flex;
+        color: #fff;
+        font-size: 30px;
+        padding: 30px;
+        border-top: 1px #29292E solid;
+    }
+    .great{
+        font-size: 40px;
+    }
+    .code {
+        font-size: 40px;
+    }
+    .logo{
+        display: none;
+    }
+    .coffeetwo{
+        display: flex;
+        width: 150px;
+        height: 25px;
+        border: 1px solid #8257E5;
+        font-size: 11px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+        font-family: "manrope";
+
+    }
+
+}
