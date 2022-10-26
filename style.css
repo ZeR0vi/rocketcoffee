@@ -125,6 +125,7 @@ button .coffee {
 }
 
 @media (max-width: 999px) {
+
     body {
         overflow-x: hidden;
         background: url(./img/rocket-coffee.png), url(./img/blur-mobile.png);
@@ -140,9 +141,7 @@ button .coffee {
     .lista{
         position: absolute;
         top: 8vh;
-        right: 0;
-        width: 100vw;
-        height: 92vh;
+
         background-color: #000;
         flex-direction: column;
         align-items: center;
@@ -168,16 +167,24 @@ button .coffee {
         display: flex;
     }
     .text{
-        display: flex;
+        display: block;
+        max-width: 800px;
+        padding-inline: 4.7rem;
+        text-align: center;
         color: #fff;
-        font-size: 30px;
+        font-size: 3rem;
         padding: 30px;
         border-top: 1px #29292E solid;
+        font-weight: 600;
+        padding-top: 18%;
+
+        margin: 2.5rem auto;
     }
     .great{
         font-size: 40px;
     }
     .code {
+        background: transparent;
         font-size: 40px;
     }
     .logo{
@@ -185,8 +192,8 @@ button .coffee {
     }
     .coffeetwo{
         display: flex;
-        width: 150px;
-        height: 25px;
+        width: 174px;
+        height: 35px;
         border: 1px solid #8257E5;
         font-size: 11px;
         color: #fff;
@@ -197,6 +204,26 @@ button .coffee {
         justify-content: center;
         font-family: "manrope";
 
+
     }
+    .texts{
+        padding-top: 130px;
+
+    }
+    .lista{
+        background: none;
+    }
+
+    .texts h1 {
+        
+        font-size: 60px;    
+    }
+    .botaomain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: center;
+    }
+
 
 }
