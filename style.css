@@ -9,7 +9,7 @@
 html, body {
   
     background-color: #000;
-    font-family: "manrope", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 
@@ -191,10 +191,12 @@ button .coffee {
         background: transparent;
         align-items: center;
         justify-content: center;
-        font-family: "manrope";
-
+        font-family: "Manrope";
+        font-weight: bold;
 
     }
+
+
 
     .lista{
         background: none;
