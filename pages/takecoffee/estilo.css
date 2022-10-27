@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  
+    background-color: #000;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    padding-top: 3rem;
+    background-image: url(./../../img/rocket-coffee.png), url(./../../img/blur-1.png), url(./../../img/blur-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, right;
+    height: 100vh;
+    background-size: 50% , 60%, 60%;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Manrope;
+
+}
+.lista {
+    list-style: none;
+    display: flex;
+
+}
+
+.text{
+    display: none;
+}
+
+.lista li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+}
+
+.mobile{
+    display: none;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.abrir {
+    display: none;
+
+}
+.coffee {
+    cursor: pointer;
+    width: 172px;
+    height: 37px;
+    border: 1px solid #8257E5;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: transparent;
+
+}
+
+.coffee:hover{
+    background-color: #8257E5;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 2vw;
+    padding-top: 7%;
+}
+
+.image{
+    display: flex;
+    width: 9vw;
+    border-radius: 105%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.cafe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+
+
+@media (max-width: 999px) {
+
+    body {
+        overflow-x: hidden;
+        background: url(./../../img/rocket-coffee.png), url(./../../img/blur-mobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100%, 100vw 60%;
+        background-attachment: fixed;
+    }
+
+    .logo{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .lista {
+        display: none;
+    }
+    .coffee{
+        display: none;
+    }
+    .abrir {
+        display: block;
+    }
+    .text{
+        display: block;
+        max-width: 800px;
+        padding-inline: 4.7rem;
+        text-align: center;
+        color: #fff;
+        font-size: 9vw;
+        padding: 30px;
+        border-top: 1px #29292E solid;
+        margin: 2.5rem auto;
+    }
+    .coffeetwo{
+        display: flex;
+        width: 40%;
+        height: 8vw;
+        border: 1px solid #8257E5;
+        font-size: 3vw;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+        font-family: "Manrope";
+        font-weight: bold;
+
+    }
+
+    .add{
+        font-size: 8vw;
+    }
+    .image{
+        
+        width: 15%;
+    }
+
+
+}
