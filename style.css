@@ -160,6 +160,7 @@ button .coffee {
 
     .cafe {
         height: 30vh;
+        background-attachment: fixed;
     }
     .mobile{
         display: flex;
@@ -193,6 +194,7 @@ button .coffee {
         justify-content: center;
         font-family: "Manrope";
         font-weight: bold;
+        background-attachment: fixed;
 
     }
 
